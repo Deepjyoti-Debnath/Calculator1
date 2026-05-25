@@ -1,60 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pass.css">
+    <title>Document</title>
 </head>
 <body>
-
-    <div id="cal">
-      <input type="text" id="display" readonly>
-
-      <div class="btn">
-        <button class="cal-btn" onclick="display = '' ;
-         document.querySelector('#display').value= display;">C</button>
-      <button class="cal-btn" onclick="display= display + '1';
-      document.querySelector('#display').value= display; ">1</button>
-      <button class="cal-btn" onclick="display = display + '2';
-       document.querySelector('#display').value= display;">2</button>
-      <button class="cal-btn" onclick="display = display + '+';
-      document.querySelector('#display').value= display;">+</button>
-      <button class="cal-btn" onclick="display = display + '3';
-      document.querySelector('#display').value= display;">3</button>
-      <button class="cal-btn" onclick="display = display + '4';
-      document.querySelector('#display').value= display;">4</button>
-      <button class="cal-btn" onclick="display = display + '-';
-      document.querySelector('#display').value= display;">-</button>
-      <button class="cal-btn" onclick="display = display + '5';
-      document.querySelector('#display').value= display;">5</button>
-      <button class="cal-btn" onclick="display = display + '6';
-      document.querySelector('#display').value= display;">6</button>
-      <button class="cal-btn"onclick="display = display + '*';
-      document.querySelector('#display').value= display;">*</button>
-      <button class="cal-btn" onclick="display = display + '7';
-      document.querySelector('#display').value= display;">7</button>
-      <button class="cal-btn" onclick="display = display + '8';
-      document.querySelector('#display').value= display;">8</button>
-      <button class="cal-btn" onclick="display = display + '/';
-      document.querySelector('#display').value= display;">/</button>
-      <button class="cal-btn"onclick="display = display + '.';
-      document.querySelector('#display').value= display;">.</button>
-      <button class="cal-btn" onclick="display = display + '9';
-      document.querySelector('#display').value= display;">9</button>
-      <button class="cal-btn" onclick="display = display + '0';
-      document.querySelector('#display').value= display;">0</button>
-      <button class="cal-btn" onclick="
-      let res = eval(display);
-      display = res;
-      document.querySelector('#display').value= display;">=</button>
-
-      </div>  
-
+    <div class="container1">
+        <h1>Sign In <br></h1>
+        <div class="display1">
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        <div class="display1">
+            <input type="text" id="email" placeholder="Email" target="_blank">
+        </div>
+        <div class="display1">
+            <input type="text" id="password" placeholder="Password">
+        </div>
+        <div id="rem">
+            <input type="checkbox" id="remember">
+            <a href=""><label for="remember"> Remember me</label></a>
+        </div>
+        <button type="button" id="signin-btn">Sign In</button>
+        <a href="pass.html"><button type="button" id="forget-btn"><i class="fa-solid fa-question-circle"></i> Forget Password</button></a>
     </div>
 
-  
 
-  <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="pass.js"></script>
 </body>
 </html>
